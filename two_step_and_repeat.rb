@@ -12,7 +12,6 @@ def first_steps
 end 
 
 def a_few_more_steps
-first_steps = 0 
 loop do 
 puts "Right foot back"
 sleep(0.5)
@@ -36,13 +35,14 @@ end
 def how_many_steps?
   steps = 0 
   loop do 
+    steps +=1 
     puts steps 
     if steps%2 == 0 
       puts "Left"
     else 
       puts "Right"
-    steps = steps + 1 
     end
+    sleep(0.5)
   end
 end
 
